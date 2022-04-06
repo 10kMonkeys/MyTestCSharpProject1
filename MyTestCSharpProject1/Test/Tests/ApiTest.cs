@@ -44,8 +44,6 @@ namespace MyTestCSharpProject1.Test.Tests
 
             Assert.Equal("Mike", response.Name);
             Assert.Equal("QA", response.Job);
-            Console.WriteLine("jweihfiwehfuwef");
-            Debug.WriteLine("wffwfwf");
         }
     }
 }
