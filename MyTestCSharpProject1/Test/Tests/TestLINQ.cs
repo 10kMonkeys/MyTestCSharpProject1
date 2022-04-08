@@ -17,7 +17,7 @@ namespace MyTestCSharpProject1.Test.Tests
 
         [Fact]
         //[AllureXunit(DisplayName = "Test 2")]
-        public void Test3()
+        public void LinqTest3()
         {
             user.atHomePage.OpenHomePage();
             user.atHomePage.VerifySearchFieldIsDisplayed();
