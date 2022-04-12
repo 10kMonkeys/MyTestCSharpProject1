@@ -39,6 +39,10 @@ bld/
 *.VisualState.xml
 TestResult.xml
 
+# Allure Test Result Report
+allure-report/
+allure-results/
+
 # Build Results of an ATL Project
 [Dd]ebugPS/
 [Rr]eleasePS/
