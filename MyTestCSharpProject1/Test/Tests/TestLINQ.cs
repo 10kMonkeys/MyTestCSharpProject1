@@ -2,21 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Allure.Xunit.Attributes;
 using MyTestCSharpProject1.Src.Model;
 using MyTestCSharpProject1.Test.Tests.Base;
 using Xunit;
 
 namespace MyTestCSharpProject1.Test.Tests
 {
-    [Collection("Collection C")]
+    [AllureSuite("Suite C")]
+    //[Collection("Collection C")]
     public class TestLINQ : BaseWebTest
     {
         public TestLINQ()
         {
         }
 
-        [Fact]
-        //[AllureXunit(DisplayName = "Test 2")]
+        //[Fact]
+        [AllureXunit(DisplayName = "LINQ 1")]
         public void LinqTest3()
         {
             user.atHomePage.OpenHomePage();

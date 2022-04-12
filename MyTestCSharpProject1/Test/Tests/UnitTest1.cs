@@ -1,18 +1,19 @@
-﻿using MyTestCSharpProject1.Test.Tests.Base;
+﻿using Allure.Xunit.Attributes;
+using MyTestCSharpProject1.Test.Tests.Base;
 using Xunit;
 
 namespace MyTestCSharpProject1.Test.Tests
 {
-    //[AllureSuite("Suite A")]
-    [Collection("Collection A")]
+    [AllureSuite("Suite A")]
+    //[Collection("Collection A")]
     public class UnitTest1 : BaseWebTest
     {
         public UnitTest1()
         {
         }
 
-        [Fact]
-        //[AllureXunit(DisplayName = "Test 1")]
+        //[Fact]
+        [AllureXunit(DisplayName = "Test 1")]
         public void Test1()
         {
             user.atHomePage.OpenHomePage();
@@ -22,8 +23,8 @@ namespace MyTestCSharpProject1.Test.Tests
             user.atCartPage.VerifyCartPageTitleIsDisplayed();
         }
 
-        [Fact]
-        //[AllureXunit(DisplayName = "Test 2")]
+        //[Fact]
+        [AllureXunit(DisplayName = "Test 2")]
         public void Test2()
         {
             user.atHomePage.OpenHomePage();

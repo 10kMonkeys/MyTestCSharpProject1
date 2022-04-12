@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using Allure.Xunit.Attributes;
 using MyTestCSharpProject1.Src.API;
 using MyTestCSharpProject1.Src.Dto;
 using MyTestCSharpProject1.Test.Tests.Base;
@@ -7,7 +8,8 @@ using Xunit;
 
 namespace MyTestCSharpProject1.Test.Tests
 {
-    [Collection("Collection D")]
+    [AllureSuite("Suite D")]
+    //[Collection("Collection D")]
     public class ApiTest : BaseApiTest
     {
         UserService userService;
@@ -17,7 +19,8 @@ namespace MyTestCSharpProject1.Test.Tests
              userService = new UserService();
         }
 
-        [Fact]
+        //[Fact]
+        [AllureXunit(DisplayName = "Get User Test")]
         public void GetUsersTest()
         {
             var response = userService.GetUser(2);
@@ -26,7 +29,8 @@ namespace MyTestCSharpProject1.Test.Tests
             Assert.Equal("Michael", response.Data[0].FirstName);
         }
 
-        [Fact]
+        //[Fact]
+        [AllureXunit(DisplayName = "Create User Test")]
         public void CreateUserTest()
         {
             var response = userService.CreateUser("Mike", "QA");
