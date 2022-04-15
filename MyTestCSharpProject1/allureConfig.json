@@ -1,7 +1,7 @@
 ﻿{
   "allure": {
     //"directory": "/Users/aliaksei/Documents/ProjectTemplates/MyTestCSharpProject1/allure-results",
-    "directory": "~/ProjectTemplates/MyTestCSharpProject1/allure-results",
+    "directory": "/Users/aliaksei/.jenkins/workspace/Test Run/allure-results",
     "title": "Title1"
   }
 }
