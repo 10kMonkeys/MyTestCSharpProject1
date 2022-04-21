@@ -10,6 +10,7 @@ namespace MyTestCSharpProject1.Test.Tests
 {
     [AllureSuite("Suite D")]
     //[Collection("Collection D")]
+    [Trait("Category", "CategoryA")]
     public class ApiTest : BaseApiTest
     {
         UserService userService;
@@ -39,7 +40,8 @@ namespace MyTestCSharpProject1.Test.Tests
             Assert.Equal("QA", response.Job);
         }
 
-        [Fact]
+        //[Fact]
+        [AllureXunit(DisplayName = "Async Create User Test")]
         public async void TestAsync()
         {
             var response = await userService.CreateUserAsync("Mike", "QA");
