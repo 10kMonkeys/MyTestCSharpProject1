@@ -1,8 +1,5 @@
-﻿using System;
-using System.Diagnostics;
-using Allure.Xunit.Attributes;
+﻿using Allure.Xunit.Attributes;
 using MyTestCSharpProject1.Src.API;
-using MyTestCSharpProject1.Src.Dto;
 using MyTestCSharpProject1.Test.Tests.Base;
 using Xunit;
 
@@ -10,7 +7,7 @@ namespace MyTestCSharpProject1.Test.Tests
 {
     [AllureSuite("Suite D")]
     //[Collection("Collection D")]
-    [Trait("Category", "CategoryA")]
+    [Trait("Category", "CategoryD")]
     public class ApiTest : BaseApiTest
     {
         UserService userService;

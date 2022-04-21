@@ -6,6 +6,7 @@ namespace MyTestCSharpProject1.Test.Tests
 {
     [AllureSuite("Suite B")]
     //[Collection("Collection B")]
+    [Trait("Category", "CategoryB")]
     public class UnitTest2 : BaseWebTest
     {
         public UnitTest2()

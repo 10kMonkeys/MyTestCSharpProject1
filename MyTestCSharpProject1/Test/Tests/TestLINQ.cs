@@ -11,6 +11,7 @@ namespace MyTestCSharpProject1.Test.Tests
 {
     [AllureSuite("Suite C")]
     //[Collection("Collection C")]
+    [Trait("Category", "CategoryC")]
     public class TestLINQ : BaseWebTest
     {
         public TestLINQ()
