@@ -101,6 +101,7 @@
     <None Remove="Src\Dto\UserDRO\" />
     <None Remove="Src\Dto\UserDTO\UserRequestDTO\" />
     <None Remove="Src\Dto\UserDTO\UserResponseDRO\" />
+    <None Remove="allure-results\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Src\" />
@@ -122,6 +123,7 @@
     <Folder Include="Src\Dto\UserDTO\" />
     <Folder Include="Src\Dto\UserDTO\UserRequestDTO\" />
     <Folder Include="Src\Dto\UserDTO\UserResponseDTO\" />
+    <Folder Include="allure-results\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyTestCSharpProject1.xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
