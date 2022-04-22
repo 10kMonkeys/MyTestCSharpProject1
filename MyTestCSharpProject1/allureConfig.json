@@ -2,7 +2,7 @@
   "allure": {
     //"directory": "/Users/aliaksei/Documents/ProjectTemplates/MyTestCSharpProject1/allure-results",
     //"directory": "/Users/aliaksei/.jenkins/workspace/RunTest/MyTestCSharpProject1/allure-results",
-    "directory": "~/MyTestCSharpProject1/allure-results",
+    "directory": "../MyTestCSharpProject1/allure-results",
     "title": "Title1"
   }
 }
